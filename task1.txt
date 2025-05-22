@@ -1,9 +1,10 @@
 example0.py
 Explain what it does. What do the different lines do?
 
-
-
-
+5. imports the "time" package
+13. finds the time difference in seconds between Jan 1, 1970 and now
+20. pauses the program for 3.5s
+27. subtracts previously saved time from current time to find how much time has passed
 
 example1.py
 Explain what it does. Give a brief summary of the program
