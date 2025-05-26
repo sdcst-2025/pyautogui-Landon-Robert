@@ -3,8 +3,11 @@ import pyautogui
 import keyboard
 
 webbrowser.open("https://orteil.dashnet.org/cookieclicker/")
-pyautogui.moveTo(1,1)
+cookiePos = pyautogui.locateOnScreen('cookie.png', confidence=0.7)
+print(cookiePos)
+pyautogui.moveTo(cookiePos)
 
+"""
 run = True
 while run == True:
     
@@ -12,3 +15,4 @@ while run == True:
 
     if keyboard.is_pressed("q"):
         break
+"""
