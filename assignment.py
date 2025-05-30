@@ -3,7 +3,7 @@ import pyautogui
 import keyboard
 
 webbrowser.open("https://orteil.dashnet.org/cookieclicker/")
-cookiePos = pyautogui.locateOnScreen('cookie.png', confidence=0.7)
+cookiePos = pyautogui.locateOnScreen('h:/Documents/CST 12/Python/pyautogui-Landon-Robert/Assets/buttonActive.png', confidence=0.7)
 print(cookiePos)
 pyautogui.moveTo(cookiePos)
 
