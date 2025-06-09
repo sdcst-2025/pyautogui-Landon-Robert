@@ -3,14 +3,13 @@ import pyautogui
 import keyboard
 import time
 """
-#webbrowser.open("https://orteil.dashnet.org/cookieclicker/")
+webbrowser.open("https://orteil.dashnet.org/cookieclicker/")
 """
 
-print(pyautogui.locateOnScreen("Assets/goldenCookie.png", confidence=0.5))
 run = True
 while run == True:
     cookiePos = pyautogui.locateOnScreen('Assets/cookie2.png', confidence=0.7)
-    try: 
+    try:
         pyautogui.locateOnScreen("Assets/goldenCookie.png", confidence=0.5)
         pyautogui.moveTo(pyautogui.locateOnScreen("Assets/goldenCookie.png", confidence=0.5))
         pyautogui.click()
