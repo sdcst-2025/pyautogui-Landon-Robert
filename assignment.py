@@ -16,13 +16,13 @@ while run == True:
         pyautogui.click()
     except:
         try:
-            pyautogui.locateOnScreen("Assets/upgradeActive.png", confidence=0.8)
-            pyautogui.moveTo(pyautogui.locateOnScreen("Assets/upgradeActive2.png", confidence=0.8))
+            pyautogui.locateOnScreen("Assets/upgradeActive.png", confidence=0.85)
+            pyautogui.moveTo(pyautogui.locateOnScreen("Assets/upgradeActive2.png", confidence=0.85))
             pyautogui.click()
             time.sleep(0.1)
         except:
             try:
-                pyautogui.locateOnScreen("Assets/buttonActive4.png", confidence=0.8)
+                pyautogui.locateOnScreen("Assets/buttonActive.png", confidence=0.8)
                 pyautogui.moveTo(pyautogui.locateOnScreen("Assets/buttonActive.png", confidence=0.8))
                 pyautogui.click(clicks=10, interval=0.1)
             except:
