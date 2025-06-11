@@ -8,8 +8,8 @@ webbrowser.open("https://orteil.dashnet.org/cookieclicker/")
 """
 
 run = True
+cookiePos = pyautogui.locateOnScreen('Assets/cookie2.png', confidence=0.8)
 while run == True:
-    cookiePos = pyautogui.locateOnScreen('Assets/cookie2.png', confidence=0.7)
     try:
         pyautogui.locateOnScreen("Assets/goldenCookie.png", confidence=0.7)
         pyautogui.moveTo(pyautogui.locateOnScreen("Assets/goldenCookie.png", confidence=0.7))
@@ -30,4 +30,6 @@ while run == True:
                 pyautogui.click(clicks=100, interval=0.1)
 
     if keyboard.is_pressed("q"):
-        break
+        run = False
+    else:
+        pass
