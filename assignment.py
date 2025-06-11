@@ -22,7 +22,7 @@ while run == True:
             time.sleep(0.1)
         except:
             try:
-                pyautogui.locateOnScreen("Assets/buttonActive4.png", confidence=0.9)
+                pyautogui.locateOnScreen("Assets/buttonActive4.png", confidence=0.8)
                 pyautogui.moveTo(pyautogui.locateOnScreen("Assets/buttonActive4.png", confidence=0.9))
                 pyautogui.click(clicks=10, interval=0.1)
             except:
